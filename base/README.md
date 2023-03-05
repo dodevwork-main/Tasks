@@ -1,13 +1,16 @@
-<h1 style="text-align: center">Tasks Base</h1>
+# Tasks Base
 
 <div style="display: flex; justify-content: center">
 <a href="https://tasksbase.vercel.app/">Example with Vercel</a>
 </div>
 
+<br>
+
 - Vite React
 - Redux Toolkit
 - Material UI
 
+<br>
 
 Run for `dev`
 ```shell
@@ -22,5 +25,5 @@ npm install --omit=dev
 npm run build
 ```
 
-[Then come here](!https://vitejs.dev/guide/build.html)
+<a href="https://vitejs.dev/guide/build.html">Then come here</a>
 
