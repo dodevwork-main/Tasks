@@ -1,0 +1,6 @@
+build/*
+public/*
+coverage/*
+cypress/*
+src/setupTests.js
+cypress.config.js

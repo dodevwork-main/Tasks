@@ -1,0 +1,7 @@
+node_modules
+public
+coverage
+build
+cypress
+package-lock.json
+cypress.config.js
