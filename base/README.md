@@ -21,7 +21,7 @@ npm run dev
 
 Run for `prod`
 ```shell
-npm install --omit=dev
+npm install
 npm run build
 ```
 
