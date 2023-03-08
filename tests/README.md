@@ -1,6 +1,6 @@
 # Tasks - Tests
 
-<a href="https://tasksbase.vercel.app/">Example with Vercel</a>
+<a href="https://taskstests.vercel.app/">Example with Vercel</a>
 
 - Create React App
 - Jest
@@ -14,7 +14,7 @@
 Run `test`
 
 ```shell
-npm test
+npm run test
 ```
 
 Run `test` with `coverage`
@@ -28,6 +28,7 @@ npm run test:coverage
 Run e2e test `cypress`
 
 ```shell
+npm run start
 npm run cypress
 ```
 
@@ -71,7 +72,7 @@ npm run start
 Run for `prod`
 
 ```shell
-npm install --omit=dev
+npm install
 npm run build
 ```
 
