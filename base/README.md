@@ -1,10 +1,6 @@
 # Tasks Base
 
-<div style="display: flex; justify-content: center">
 <a href="https://tasksbase.vercel.app/">Example with Vercel</a>
-</div>
-
-<br>
 
 - Vite React
 - Redux Toolkit
