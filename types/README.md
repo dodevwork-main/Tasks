@@ -1,6 +1,6 @@
 # Tasks Types
 
-<a href="https://taskstests.vercel.app/">Example with Vercel</a>
+<a href="https://taskstypes.vercel.app/">Example with Vercel</a>
 
 - Vite React
 - TypeScript
