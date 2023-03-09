@@ -12,11 +12,11 @@ export const taskSlice = createSlice({
     name: 'task',
     initialState,
     reducers: {
-        addTodo: (state, action) => {
-            const {todo} = action.payload;
+        addTask: (state, action) => {
+            const {task} = action.payload;
 
-            state.collection.push(todo);
-            state.todo.push(todo.id);
+            state.collection.push(task);
+            state.todo.push(task.id);
         },
         setDone: (state, action) => {
             const {id} = action.payload;
@@ -42,6 +42,6 @@ export const getTodo = (state) => state.task.todo;
 export const getDone = (state) => state.task.done;
 
 
-export const {addTodo, setDone, setTodo} = taskSlice.actions;
+export const {addTask, setDone, setTodo} = taskSlice.actions;
 
 export default taskSlice.reducer;

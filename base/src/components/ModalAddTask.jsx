@@ -6,28 +6,28 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import DialogTitle from "@mui/material/DialogTitle";
 import TextField from "@mui/material/TextField";
-import {addTodo} from "../store/slices/task.js";
+import {addTask} from "../store/slices/task.js";
 
 
-const ModalAddTodo = ({closeModal}) => {
+const ModalAddTask = ({closeModal}) => {
     const dispatch = useDispatch();
-    const [todoTitle, setTodoTitle] = useState("");
+    const [taskTitle, setTaskTitle] = useState("");
     const inputRef = useRef(null);
 
-    const handleTodoTitle = (e) => {
-        setTodoTitle(e.target.value);
+    const handleTaskTitle = (e) => {
+        setTaskTitle(e.target.value);
     };
 
-    const handleAddTodo = (e) => {
+    const handleAddTask = (e) => {
         e.preventDefault();
 
-        if (todoTitle) {
-            const todo = {
+        if (taskTitle) {
+            const task = {
                 id: `${Date.now()}`,
-                title: todoTitle
+                title: taskTitle
             };
 
-            dispatch(addTodo({todo}));
+            dispatch(addTask({task}));
         }
 
         closeModal();
@@ -48,13 +48,13 @@ const ModalAddTodo = ({closeModal}) => {
             open={true}
             fullWidth
         >
-            <form onSubmit={handleAddTodo}>
-                <DialogTitle>Add Todo</DialogTitle>
+            <form onSubmit={handleAddTask}>
+                <DialogTitle>Add Task</DialogTitle>
 
                 <DialogContent>
                     <TextField
-                        defaultValue={todoTitle}
-                        onChange={handleTodoTitle}
+                        defaultValue={taskTitle}
+                        onChange={handleTaskTitle}
                         inputRef={inputRef}
                         margin="dense"
                         label="Title"
@@ -85,4 +85,4 @@ const ModalAddTodo = ({closeModal}) => {
     );
 };
 
-export default ModalAddTodo;
+export default ModalAddTask;

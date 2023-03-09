@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Task from "../Task/Task";
 
 const ListTasks = ({ taskIds, isDone }) => (
-  <Stack sx={{ minHeight: "100%", maxHeight: "100%", overflow: "auto" }}>
+  <Stack sx={{ height: "100%", overflow: "auto" }}>
     <Stack>
       {taskIds?.map((taskId) => (
         <Stack key={taskId}>

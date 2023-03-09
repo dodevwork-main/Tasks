@@ -21,7 +21,11 @@ const Header: FC = () => {
       sx={(theme) => ({ background: theme.palette.primary.light })}
       px={4}
     >
-      <Typography variant="h4" color="white">
+      <Typography
+        variant="h4"
+        color="white"
+        sx={(theme) => ({ [theme.breakpoints.down(400)]: { fontSize: "1.4rem" } })}
+      >
         Tasks - Types
       </Typography>
 

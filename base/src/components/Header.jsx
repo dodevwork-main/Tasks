@@ -2,14 +2,14 @@ import {useState} from "react";
 import Stack from '@mui/material/Stack';
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import ModalAddTodo from "./ModalAddTodo.jsx";
+import ModalAddTask from "./ModalAddTask.jsx";
 
 
 const Header = () => {
-    const [modalAddTodo, setModalAddTodo] = useState(false);
+    const [modalAddTask, setModalAddTask] = useState(false);
 
-    const handleModalAddTodo = () => {
-        setModalAddTodo(prevState => !prevState);
+    const handleModalAddTask = () => {
+        setModalAddTask(prevState => !prevState);
     };
 
     return (
@@ -28,13 +28,13 @@ const Header = () => {
 
             <Button
                 variant="contained"
-                onClick={handleModalAddTodo}
+                onClick={handleModalAddTask}
             >
-                Add Todo
+                Add Task
             </Button>
 
-            {modalAddTodo &&
-                <ModalAddTodo closeModal={handleModalAddTodo}/>
+            {modalAddTask &&
+                <ModalAddTask closeModal={handleModalAddTask}/>
             }
         </Stack>
     );

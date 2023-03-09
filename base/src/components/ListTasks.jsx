@@ -4,7 +4,7 @@ import Stack from "@mui/material/Stack";
 
 const ListTasks = ({taskIds, isDone = false}) => {
     return (
-        <Stack sx={{minHeight: "100%", maxHeight: "100%", overflow: "auto"}}>
+        <Stack sx={{height: "100%", overflow: "auto"}}>
             <Stack>
                 {taskIds?.map(taskId =>
                     <Stack key={taskId}>
